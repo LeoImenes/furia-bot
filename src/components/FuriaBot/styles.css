@@ -216,10 +216,10 @@ button:hover {
 
 @media (max-width: 480px) {
   .chatbot-modal {
-    width: 95svw;
+    width: 85svw;
     height: 75dvh;
     padding: 10px;
-    top: 45%;
+    border-radius: 0px;
   }
 
   .chatbot-container {

@@ -127,6 +127,7 @@ export const FuriaChatbot: React.FC<OpenModalbySession> = ({
       <button
         className="open-chat-button"
         onClick={() => setIsModalOpen((prev) => !prev)}
+        style={{display: (isModalOpen || openModalbySession) ? 'none': 'flex' }}
       >
         <img src={botImage} alt="Abrir Chat" />
       </button>
