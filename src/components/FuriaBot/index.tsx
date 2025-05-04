@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Fuse from "fuse.js";
 import {
   defaultSuggestions,
@@ -89,6 +89,13 @@ export const FuriaChatbot: React.FC<OpenModalbySession> = ({
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const suggestionRef = useRef<HTMLDivElement>(null);
+  const chatRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (chatRef.current) {
+      chatRef.current.scrollTop = chatRef.current.scrollHeight;
+    }
+  }, [chat]);
 
   const scrollSuggestions = (direction: "left" | "right") => {
     if (suggestionRef.current) {
@@ -127,7 +134,7 @@ export const FuriaChatbot: React.FC<OpenModalbySession> = ({
       <button
         className="open-chat-button"
         onClick={() => setIsModalOpen((prev) => !prev)}
-        style={{display: (isModalOpen || openModalbySession) ? 'none': 'flex' }}
+        style={{ display: isModalOpen || openModalbySession ? "none" : "flex" }}
       >
         <img src={botImage} alt="Abrir Chat" />
       </button>
@@ -138,7 +145,7 @@ export const FuriaChatbot: React.FC<OpenModalbySession> = ({
               X
             </button>
 
-            <div className="chat-box">
+            <div className="chat-box" ref={chatRef}>
               {chat.map((msg, index) => (
                 <div key={index} className={`message ${msg.sender}`}>
                   <div className="message-header">

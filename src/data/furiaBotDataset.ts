@@ -186,6 +186,8 @@ export const intents = [
       "Contra quem jogar",
       "confrontos",
       "proximos confrontos",
+      "Quando é o proximo jogo",
+      "proximo jogo",
       "futuros confrontos",
     ],
     responses: [
@@ -226,6 +228,9 @@ export const intents = [
       "Quando é o próximo torneio da furia?",
       "Quando é o próximo torneio do time?",
       "Quando é o próximo torneio do time da furia?",
+      "Quando é o proximo campeonato",
+      "proximo campeonato",
+      "campeonato",
       "torneios",
       "eventos",
     ],
