@@ -1,0 +1,127 @@
+.latest-results {
+    background: #111;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 16px;
+    font-family: 'Black Ops One', sans-serif;
+    margin-bottom: 50px;
+}
+
+.latest-results h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.result-card {
+    background: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: #bbb;
+}
+
+.match {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2c2c2c;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.team {
+    text-align: center;
+    flex: 1;
+}
+
+.team img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+.team span {
+    display: block;
+    font-size: 14px;
+    color: #eee;
+}
+
+.team strong {
+    display: block;
+    font-size: 20px;
+}
+
+.team.winner {
+    color: #66bb6a;
+}
+
+.team.loser {
+    color: #ef5350;
+}
+
+.vs {
+    margin: 0 10px;
+    font-weight: bold;
+    color: #888;
+}
+
+.mobile-slider {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+}
+
+.mobile-slider .slide {
+    width: 100%;
+    max-width: 360px;
+}
+
+.nav-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    font-size: 24px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.nav-button.left {
+    left: -20px;
+}
+
+.nav-button.right {
+    right: -20px;
+}
+
+@media (max-width: 768px) {
+    .results-grid {
+        display: none;
+    }
+
+    .mobile-slider {
+        display: flex;
+    }
+}

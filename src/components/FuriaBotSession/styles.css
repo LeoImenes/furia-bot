@@ -1,0 +1,121 @@
+
+.furia-showcase {
+  background: linear-gradient(145deg, #0a0a0a, #000000);
+  padding: 80px 20px;
+  color: #ffffff;
+  font-family: 'Black Ops One', sans-serif;
+}
+
+.furia-card {
+  max-width: 1200px;
+  margin: auto;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  background: rgba(20, 20, 20, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(132, 131, 129, 0.3);
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.furia-info {
+  flex: 1;
+  min-width: 280px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.furia-info h2 {
+  font-size: 2.8rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.furia-info .subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.furia-info ul {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.furia-info li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  position: relative;
+  padding-left: 10px;
+  list-style: none;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: underline;
+}
+
+.furia-info li::before {
+  content: "⦿";
+  color: #D3AF37;
+  position: absolute;
+  left: -15px;
+}
+
+.open-chat {
+    width: 50%;
+  background-color: transparent;
+  border: 2px solid #D3AF37;
+  padding: 14px 30px;
+  color: #D3AF37;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  align-self: center;
+}
+
+.open-chat:hover {
+  background-color: #D3AF37;
+  color: #000;
+  box-shadow: 0 0 15px #D3AF37;
+}
+
+.furia-img-wrapper {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.furia-img-wrapper img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(51, 51, 50, 0.5);
+  filter: brightness(1.1) contrast(1.1);
+}
+
+@media (max-width: 768px) {
+  .furia-card {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .furia-info h2 {
+    font-size: 2rem;
+  }
+
+  .furia-img-wrapper img {
+    max-width: 100%;
+  }
+
+  .open-chat {
+    width: 100%;
+    max-width: 300px;
+  }
+}
