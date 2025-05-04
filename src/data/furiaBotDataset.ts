@@ -286,16 +286,15 @@ export const intents = [
   },
   {
     tags: [
-      "Quem é o MLODOY",
-      "MLODOY",
-      "conte sobre o MLODOY",
-      "jogador MLODOY",
+      "Quem é o MOLODOY",
+      "MOLODOY",
+      "conte sobre o MOLODOY",
+      "jogador MOLODOY",
     ],
     responses: [
-      `MLODOY é o coach da FURIA, a mente por trás das táticas e estratégias. O cara enxerga o jogo como poucos.`,
-      `Com MLODOY por trás, a FURIA entra no servidor preparada pra tudo. Ele é o cérebro fora do servidor.`,
-      `MLODOY é peça essencial no sucesso da equipe, trazendo leitura de jogo, disciplina e mentalidade vencedora.`,
-      `Com sua experiência e visão de jogo, MLODOY ajuda a moldar campeões. O homem é brabo até fora das telas.`,
+      `O novato MOLODOY chegou para mostrar serviço e espalhar bala pelo server`,
+      `MOLODOY a ameaça cazaque e filho espiritual de Neymar é o mais novo integrante da equipe`,
+      `O cazaque que irá orgulhar o Brazil, seja muito bem vindo`,
     ],
   },
   {
