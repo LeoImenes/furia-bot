@@ -184,6 +184,9 @@ export const intents = [
       "Contra quem vamos jogar",
       "Contra quem iremos jogar",
       "Contra quem jogar",
+      "confrontos",
+      "proximos confrontos",
+      "futuros confrontos",
     ],
     responses: [
       "Proximo jogo: no dia 10/05 pela PGL ASTANA, contra a The Mongolz. Entre em <a href='https://www.hltv.org/matches/2382203/the-mongolz-vs-furia-pgl-astana-2025' target='_blank' rel='noopener noreferrer'>HLTV</a> para mais informações e pra cima deles FURIA!!.",
@@ -471,6 +474,9 @@ export const intents = [
       "Quando foi o ultimo jogo da furia",
       "Quando foi o ultimo jogo do time",
       "Quando foi o ultimo jogo do time da furia",
+      "Historico de confronto",
+      "Ultimos confrontos",
+      
     ],
     responses: [
       "Nossa ultima partida foi dia 09/04 contra a The Mongolz, onde perdemos por 2-0 na PGL Bucharest 2025.",
