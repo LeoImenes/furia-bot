@@ -95,7 +95,14 @@ export const FuriaChatbot: React.FC<OpenModalbySession> = ({
     if (chatRef.current) {
       chatRef.current.scrollTop = chatRef.current.scrollHeight;
     }
-  }, [chat]);
+
+    if(isModalOpen || openModalbySession) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'auto'
+
+    }
+  }, [chat, isModalOpen, openModalbySession]);
 
   const scrollSuggestions = (direction: "left" | "right") => {
     if (suggestionRef.current) {
