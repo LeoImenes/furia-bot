@@ -293,8 +293,8 @@ export const intents = [
     ],
     responses: [
       `O novato MOLODOY chegou para mostrar serviço e espalhar bala pelo server`,
-      `MOLODOY a ameaça cazaque e filho espiritual de Neymar é o mais novo integrante da equipe`,
-      `O cazaque que irá orgulhar o Brazil, seja muito bem vindo`,
+      `MOLODOY, a ameaça cazaque e filho espiritual de Neymar é o mais novo integrante da equipe`,
+      `O cazaque que irá orgulhar o Brasil, seja muito bem vindo`,
     ],
   },
   {
