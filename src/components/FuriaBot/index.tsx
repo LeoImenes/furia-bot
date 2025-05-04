@@ -41,7 +41,7 @@ const allTags = intents.flatMap((intent) =>
 
 const fuse = new Fuse(allTags, {
   keys: ["tag"],
-  threshold: 0.5,
+  threshold: 0.4,
   includeScore: true,
   useExtendedSearch: true,
   ignoreDiacritics: true,
