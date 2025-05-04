@@ -38,7 +38,7 @@ export const NextEvents = () => {
 
   return (
     <div className="events-container">
-      <h2 className="events-title">Próximo Eventos</h2>
+      <h2 className="events-title">Próximos Eventos</h2>
       
       <div className="events-list">
         {events.map((event, index) => (
