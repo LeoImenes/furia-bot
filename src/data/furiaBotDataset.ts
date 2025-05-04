@@ -81,6 +81,8 @@ export const intents = [
       "salve salve",
       "hey",
       "salveee",
+      "hello",
+      "Hi",
     ],
     responses: ["Olá! Como posso ajudar você hoje?"],
   },
@@ -535,6 +537,19 @@ export const intents = [
       "No dia 07/06 estaremos on pela BLAST.tv Austin Major 2025 para o azar dos oponentes",
       "Esteja presente no dia 07/06 para uma aula da FURIA na BLAST.tv Austin Major 2025",
       "Nossa equipe irá participar do BLAST.tv Austin Major 2025 no dia 07/06, acompanhe pela <a href='https://www.hltv.org/events/8437/blasttv-austin-major-2025-stage-2' rel='noopener noreferrer' target='_blank'>HLTV</> !",
+    ],
+  },
+  {
+    tags: [
+      "A furia tem major",
+      "quantos majors a furia tem",
+      "majors da furia",
+      "furia major ",
+    ],
+    responses: [
+      "Infelizmente não temos um Major, ainda... ",
+      "Ainda não temos um major, mas esse é nosso objetivo",
+      "Nossa equipe  está em busca do nosso primeiro major, com furia até a conquista",
     ],
   },
 ];
